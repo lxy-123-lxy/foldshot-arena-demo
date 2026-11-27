@@ -1,0 +1,15 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>折线擂台 · 弹射试玩</title><link rel="stylesheet" href="./style.css"></head>
+<body><main>
+<header><div><span class="eyebrow">桌面战术 · H5 原型</span><h1>折线擂台</h1></div><span class="stamp">试玩 0.2</span></header>
+<nav aria-label="游戏模式"><button id="duel" class="selected">同屏对战</button><button id="boss">Boss 挑战</button></nav>
+<section class="score" id="score" aria-label="双方血量"></section>
+<div class="stage">
+<canvas id="arena" width="720" height="920" aria-label="弹射场地"></canvas>
+<div id="overlay" class="overlay" hidden><div class="panel"><h2 id="result"></h2><p id="details"></p><div id="actions"></div></div></div>
+</div>
+<section class="status"><strong id="turn"></strong><span id="clock"></span><div class="meter"><i id="bar"></i></div><p id="hint"></p></section>
+<div class="buttons"><button id="reset">立即重开</button><button id="swap">交换先手</button><button id="pass">跳过出手</button></div>
+<footer>按住己方棋子向后拉，松手弹射。白色虚线只预览地形反弹，不预判撞到棋子。</footer>
+</main><script type="module" src="./game.js"></script></body></html>
